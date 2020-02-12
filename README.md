@@ -12,4 +12,4 @@ If you would like to check to see if your solution is correct, run the following
 >python test.py
 ```
 
-a status message of `OK` means your solution is correct.
+A status message of `OK` means your solution is correct.
