@@ -1,7 +1,19 @@
 #!/usr/bin/env python
 
-import numpy as np
 import unittest
+import nbconvert
+import os
+
+import numpy as np
+
+with open("assignment7.ipynb") as f:
+    exporter = nbconvert.PythonExporter()
+    python_file, _ = exporter.from_file(f)
+
+
+with open("assignment7.py", "w") as f:
+    f.write(python_file)
+
 
 from assignment7 import convert_to_true_stress_and_strain
 
